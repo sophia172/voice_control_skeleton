@@ -1,0 +1,135 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.status-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.status, .speaking-status {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.status {
+    background-color: #ff4444;
+    color: white;
+}
+
+.status.connected {
+    background-color: #00C851;
+}
+
+.speaking-status {
+    background-color: #eee;
+}
+
+.speaking-status.speaking {
+    background-color: #33b5e5;
+    color: white;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#startButton {
+    background-color: #00C851;
+    color: white;
+}
+
+#endButton {
+    background-color: #ff4444;
+    color: white;
+}
+
+/* 3D Skeleton Model Styles */
+.model-container {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.model-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.skeleton-container {
+    width: 100%;
+    height: 400px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.movement-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.movement-info h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.movement-info ul {
+    padding-left: 20px;
+}
+
+.movement-info li {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.last-command {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #e9f7fe;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #0277bd;
+}

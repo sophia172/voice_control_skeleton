@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElevenLabs Conversational AI Demo</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ElevenLabs Conversational AI Demo</h1>
+        <div class="status-container">
+            <div id="connectionStatus" class="status">Disconnected</div>
+            <div id="speakingStatus" class="speaking-status">Agent Silent</div>
+        </div>
+        <div class="controls">
+            <button id="startButton" class="button">Start Conversation</button>
+            <button id="endButton" class="button" disabled>End Conversation</button>
+        </div>
+        
+        <!-- 3D Skeleton Model Container -->
+        <div class="model-container">
+            <h2>3D Skeleton Model</h2>
+            <div id="skeletonContainer" class="skeleton-container"></div>
+            <div class="movement-info">
+                <h3>Voice Commands</h3>
+                <p>Try saying commands like:</p>
+                <ul>
+                    <li>"Raise your right arm"</li>
+                    <li>"Bend your left knee"</li>
+                    <li>"Wave your right hand"</li>
+                    <li>"Nod your head"</li>
+                    <li>"Reset position"</li>
+                </ul>
+                <div id="lastCommand" class="last-command">Last command: None</div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/bundle.js"></script>
+</body>
+</html>
